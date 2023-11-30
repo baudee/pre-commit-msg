@@ -1,0 +1,8 @@
+- id: pre-commit-msg
+  name: Convention commit message
+  description: This hook checks if the commit message follows the convention.
+  entry: ./pre-commit.sh
+  language: script
+  always_run: true
+  stages:
+    - commit-msg
